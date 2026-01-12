@@ -4,18 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const signupForm = document.getElementById("signup-form");
   const messageDiv = document.getElementById("message");
 
-  // Inject minimal styles for pretty cards and participant lists
-  function injectStyles() {
-    if (document.getElementById("activity-card-styles")) return;
-    const css = `
-      
-    `;
-    const style = document.createElement("style");
-    style.id = "activity-card-styles";
-    style.textContent = css;
-    document.head.appendChild(style);
-  }
-  injectStyles();
+  
 
   // Function to fetch activities from API
   async function fetchActivities() {
