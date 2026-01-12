@@ -8,22 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function injectStyles() {
     if (document.getElementById("activity-card-styles")) return;
     const css = `
-      .activity-card {
-        border: 1px solid #e6eef8;
-        border-radius: 10px;
-        padding: 14px;
-        margin: 10px 0;
-        background: linear-gradient(180deg,#fff,#fbfcff);
-        box-shadow: 0 2px 6px rgba(15,23,42,0.04);
-        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      }
-      .activity-card h4 { margin: 0 0 6px 0; color: #0b5cff; font-size: 1.05rem; }
-      .activity-card p { margin: 6px 0; color: #333; }
-      .participants { margin-top: 10px; }
-      .participants strong { display: block; margin-bottom: 6px; color: #222; }
-      .participants ul { margin: 0; padding-left: 1.2em; color: #222; }
-      .participants li { margin: 4px 0; }
-      .participants .no-participants { color: #777; font-style: italic; list-style-type: disc; }
+      
     `;
     const style = document.createElement("style");
     style.id = "activity-card-styles";
